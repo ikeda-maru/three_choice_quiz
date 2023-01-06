@@ -46,9 +46,14 @@ function render(quiz) {
   main.appendChild(section);
 }
 
-
 // 問題文, 選択肢, 選択肢, 選択肢, 正解(0, 1, 2)
-const quiz = ['1の正解は？', '選択肢 A', '選択肢 B', '選択肢 C', 0];
+const quizzes = [
+  ['1の正解は？', '選択肢 A', '選択肢 B', '選択肢 C', 0],
+  ['2の正解は？', '選択肢 A', '選択肢 B', '選択肢 C', 1],
+  ['3の正解は？', '選択肢 A', '選択肢 B', '選択肢 C', 2],
+];
 
-render(quiz);
+quizzes.forEach((quiz) => {
+  render(quiz);
+});
 }
